@@ -1,10 +1,6 @@
 class Document:
-    def __init__(self, name,content):
+    def __init__(self, name):
         self.name = name
-        self.content = content
     
-    def get_name(self):
-        return self.name
-
-    def get_content(self):
-        return self.content
+    def extract_text(self):
+        raise NotImplementedError("Subclasses must implement extract text()")
